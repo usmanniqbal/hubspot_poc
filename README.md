@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# POC for hubspot disable tracking.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Check `public/index.html` which adds tracking code following with snippet to disable it, hubspot chat requires tracking code to be part of it hence we try to disable it making it part of app.
 
 ## Available Scripts
 
