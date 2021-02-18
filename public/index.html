@@ -39,12 +39,23 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9376475.js"></script>
+  <script type="text/javascript">
+    window.hsConversationsSettings = {
+      loadImmediately: false,
+    } 
+  </script>
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9376475.js"></script> -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7412106.js"></script>
   <script type="text/javascript">
     function disableTracking() {
-      var _hsq = window._hsq = window._hsq || [];
-      _hsq.push(["doNotTrack"]);
+      // var _hsq = window._hsq = window._hsq || [];
+      // _hsq.push(["doNotTrack"]);
       // _hsq.push(["method", "arg1"]);
+      window.hsConversationsSettings = {
+        identificationEmail: "root1@eventmobi.com",
+        identificationToken: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb290MUBldmVudG1vYmkuY29tIiwiYXVkIjoiODQyMzM0OCIsImxhc3RfbmFtZSI6Imxhc3ROYW1lIC0gODAyNCIsImV4cCI6MTYxMzcyMTA5OSwiaWF0IjoxNjEzNjc3ODk5LCJmaXJzdF9uYW1lIjoiZmlyc3ROYW1lIn0.IT5Cg71EqmGJQopcMoq5gvn-ONDELQkB5_vaLB9fj14"
+      }
+      window.HubSpotConversations.widget.load();
     }
     window.onload = disableTracking;
   </script>
